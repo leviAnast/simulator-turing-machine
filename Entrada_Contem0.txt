@@ -1,0 +1,7 @@
+fita 111110
+init q0
+accept qf
+
+q0,1,q0,1,D
+q0,0,qf,0,D
+q0, ,qr, ,D
