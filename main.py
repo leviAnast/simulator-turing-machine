@@ -1,14 +1,9 @@
-# .\.venv\Scripts\python.exe -m pip install readchar
-#import threading
-#import readchar
 from State import State
-from Transition import Transition
-from Edge import Edge
 from Machine import Machine
+import tkinter as tk
+from MTvisual import MTVisual
 
-def teste_x_y():
-    print("{ w in Σ^* | w é um número binário múltiplo de 3 }")
-
+def criar_maquina():
     q0 = State('q0')
     q1 = State('q1')
     q2 = State('q2')
@@ -16,17 +11,16 @@ def teste_x_y():
 
     q0.addTransition(q0, '0', '0', 'D')
     q0.addTransition(q1, '1', '1', 'D')
-
     q1.addTransition(q0, '1', '1', 'D')
     q1.addTransition(q2, '0', '0', 'D')
-
     q2.addTransition(q2, '1', '1', 'D')
     q2.addTransition(q1, '0', '0', 'D')
 
-    w = '0000110'
-
-    mt = Machine(q0, w, 20)
-    mt.run()
+    return Machine(q0, '0000110', 20)
 
 if __name__ == "__main__":
-    teste_x_y()
+    root = tk.Tk()
+    root.title("Simulador de Máquina de Turing")
+    mt = criar_maquina()
+    interface = MTVisual(root, mt)
+    root.mainloop()
