@@ -1,0 +1,10 @@
+fita 101001
+init qp
+accept qf
+
+qp,1,qp,1,D
+qp,0,qp,0,D
+qp,_,qx,X,E
+qx,0,qx,0,E
+qx,1,qx,1,E
+qx,_,qf,y,D

@@ -4,4 +4,4 @@ accept qf
 
 q0,1,q0,1,D
 q0,0,qf,0,D
-q0, ,qr, ,D
+q0,_,qr,_,D
