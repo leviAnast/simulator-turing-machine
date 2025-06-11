@@ -1,28 +1,19 @@
-fita 101100
-init q0
+fita 110
+init qp
 accept qf
 
-q0,1,q1,X,D      
-q0,0,q4,0,D      
-q0,_,qf,_,D      
+qp,0,qp,0,D
+qp,1,q1,1,D
+qp,_,qx,_,E
 
-q1,1,q1,1,D
-q1,0,q2,Y,D
-q1,Y,q1,Y,D
+q1,0,q2,0,D
+q1,1,qp,1,D
+q1,_,qx,_,E
 
+q2,0,q1,0,D
 q2,1,q2,1,D
-q2,Y,q2,Y,D
-q2,_,q3,_,E       
+q2,_,qx,_,E
 
-q3,1,q3,1,E
-q3,Y,q3,Y,E
-q3,X,q0,X,D       
-
-q1,_,qr,_,D
-q2,_,qr,_,D
-q3,_,qr,_,D
-
-q0,Y,q0,Y,D
-q0,X,q0,X,D
-q0,_,qf,_,D
-
+qx,0,qx,0,E
+qx,1,qx,1,E
+qx,_,qf,y,D

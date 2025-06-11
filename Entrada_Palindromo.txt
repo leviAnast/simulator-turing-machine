@@ -1,0 +1,37 @@
+fita 101
+init q0
+accept qf
+
+q0,0,q1,X,D
+q0,1,q2,Y,D
+q0,X,qf,X,S
+q0,Y,qf,Y,S
+q0,_,qf,_,S
+
+q1,0,q1,0,D
+q1,1,q1,1,D
+q1,X,q3,X,E
+q1,Y,q3,Y,E
+q1,_,q3,_,E
+
+q2,0,q2,0,D
+q2,1,q2,1,D
+q2,X,q4,X,E
+q2,Y,q4,Y,E
+q2,_,q4,_,E
+
+q3,0,q5,X,E
+q3,X,qf,X,S
+q3,Y,qf,Y,S
+q3,_,qf,_,S
+
+q4,1,q5,Y,E
+q4,X,qf,X,S
+q4,Y,qf,Y,S
+q4,_,qf,_,S
+
+q5,X,q5,X,E
+q5,Y,q5,Y,E
+q5,0,q5,0,E
+q5,1,q5,1,E
+q5,_,q0,_,D

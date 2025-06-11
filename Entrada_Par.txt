@@ -1,10 +1,10 @@
 fita 1100
 init q0
-accept q0
+accept qf
 
 q0,0,q1,0,D
 q0,1,q1,1,D
-q0,_,q0,_,D
+q0,_,qf,_,D
 
 q1,0,q0,0,D
 q1,1,q0,1,D

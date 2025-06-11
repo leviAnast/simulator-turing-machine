@@ -8,7 +8,7 @@ pygame.init()
 screen = pygame.display.set_mode((1000, 400))
 
 
-file_path = "fonte.txt"
+file_path = "Entrada_AB.txt" #"Entrada_Palindromo.txt"  "Entrada_Contem0.txt"  "Entrada_Multiplo3.txt"  "Entrada_Par.txt"  "Entrada_AB.txt"
 
 estado_inicial, fita = ler_arquivo(file_path)
 mt = Machine(estado_inicial, fita, 30)
