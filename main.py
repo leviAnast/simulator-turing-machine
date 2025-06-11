@@ -1,3 +1,6 @@
+#Dupla: Francisco Levi Souza Anastacio (538536)
+# Maria Eduarda Nogueira Freitas (536868)
+
 import pygame
 import sys
 from Machine import Machine
