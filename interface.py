@@ -44,7 +44,7 @@ class Interface:
             self.screen.blit(texto, (x + 20, y + 15))
 
             if i == pos:
-                pygame.draw.polygon(self.screen, (255, 0, 0), [
+                pygame.draw.polygon(self.screen, (255, 255, 0), [
                     (x + 10, y - 20),
                     (x + 30, y),
                     (x + 50, y - 20)
